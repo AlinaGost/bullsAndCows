@@ -1,0 +1,15 @@
+.img__anew {
+  width: 70px;
+  height: auto;
+
+  cursor: pointer;
+  transition: transform 0.2s linear;
+
+  position: absolute;
+  bottom: -200px;
+  right: 0;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}

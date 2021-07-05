@@ -1,0 +1,13 @@
+.img {
+  display: flex;
+  flex-direction: row;
+}
+
+.img__item {
+  width: 250px;
+  height: auto;
+
+  &:first-child {
+    margin-right: 60px;
+  }
+}

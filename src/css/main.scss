@@ -1,16 +1,83 @@
-@import "./scss/main.scss";
+@import "scss/input.scss";
+@import "./scss/header.scss";
+@import "./scss/regulations.scss";
+@import "./scss/button.scss";
+@import "./scss/img.scss";
+@import "./scss/play.scss";
+@import "./scss/anew.scss";
 
-body{
-  //background-image: url("src/assets/img/bcg_img.jpg");
-  background-color: #F5DEB4;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "asd", sans-serif;
+  background-color: var(--color-white);
+  scroll-behavior: smooth;
 }
 
 img {
-  width: 250px;
-  height: 250px;
+  max-width: 100%;
 }
 
-.img {
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-container {
+  overflow: hidden;
+}
+
+.is-hidden {
+  display: none !important; // stylelint-disable-line declaration-no-important
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+  position: relative;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+
+.display__flex {
   display: flex;
-  flex-direction: row;
+}
+
+.display__none {
+  display: none;
 }

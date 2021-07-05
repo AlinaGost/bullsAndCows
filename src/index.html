@@ -6,16 +6,38 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="css/main.scss">
-  <title>Document</title>
+  <link rel="shortcut icon" href="#">
+  <title>Bulls and Cows</title>
 </head>
 <body>
-  <h1>Быки и коровы</h1>
-  <div class="img">
-    <img src="./assets/img/bull.jpg" alt="img">
-    <img src="./assets/img/cow.png" alt="img">
-    <img src="./assets/img/test.svg" alt="img">
-    <img src="./assets/img/cat.gif" alt="img">
+    <header class="header">
+      <h1>Быки и коровы</h1>
+    </header>
+
+    <div class="container">
+      <div class="regulations">
+        <div class="text">
+          <h2>Правила игры</h2>
+          <p>Компьютер задумывает четыре различные цифры из 0,1,2,...9.
+            Игрок делает ходы, чтобы узнать эти цифры и их порядок.
+            Каждый ход состоит из четырёх цифр, 0 может стоять на первом месте.
+            В ответ компьютер показывает число отгаданных цифр,
+            стоящих на своих местах (число быков) и число отгаданных цифр, стоящих не на своих местах (число коров).
+          </p>
+        </div>
+        <div class="img">
+          <img class="img__item" src="./assets/img/bull.jpg" alt="img">
+          <img class="img__item" src="./assets/img/cow.png" alt="img">
+        </div>
+      </div>
+
+      <div id="inner" class="inner display__none">
+        <input class="input" type="number" id="input">
+        <button class="button" id="button">Сделать ход</button>
+      </div>
+      <img class="img__play display__flex" src="./assets/img/play.jpg" alt="" id="play">
+      <img class="img__anew display__none" src="./assets/img/anew.jpg" alt="" id="anew">
   </div>
-  <button class="button">Сделать ход</button>
+
 </body>
 </html>

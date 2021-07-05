@@ -1,0 +1,12 @@
+.img__play {
+  margin: 0 auto;
+  width: 300px;
+  height: auto;
+
+  cursor: pointer;
+  transition: transform 0.2s linear;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
