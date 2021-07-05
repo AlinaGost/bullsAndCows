@@ -1,5 +1,11 @@
 .inner {
-  justify-content: left;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.left__side {
+  display: flex;
   align-items: center;
 }
 
