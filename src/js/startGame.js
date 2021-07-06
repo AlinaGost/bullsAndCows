@@ -4,6 +4,7 @@ import {randomNumber} from "./randomNumber";
 
 let displayFlex = 'display__flex';
 let displayNone = 'display__none';
+let array = [];
 
 let play = document.getElementById('play');
 let inner = document.getElementById('inner');
@@ -18,5 +19,5 @@ play.onclick =  function startGame() {
   addClass(inner, displayFlex);
   addClass(anew, displayFlex);
 
-  randomNumber();
+  randomNumber(3, array);
 }
