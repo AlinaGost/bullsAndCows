@@ -12,6 +12,7 @@
 <body>
     <header class="header">
       <h1>Быки и коровы</h1>
+      <img class="img__anew display__none" src="./assets/img/anew.jpg" alt="" id="anew">
     </header>
 
     <div class="container">
@@ -32,17 +33,14 @@
       </div>
 
       <div id="inner" class="inner display__none">
-        <div class="left__side">
-          <input class="input" type="number" id="input">
-          <button class="button" id="check">Проверить</button>
-        </div>
-        <div class="results">
-          <ul id="list">
-          </ul>
-        </div>
+          <input class="input" type="number" id="input" autocomplete="off">
+          <button class="button" id="checkBtn">Проверить</button>
+      </div>
+      <div class="results__list" id="results">
+        <ul class="list" id="list">
+        </ul>
       </div>
       <img class="img__play display__flex" src="./assets/img/play.jpg" alt="" id="play">
-      <img class="img__anew display__none" src="./assets/img/anew.jpg" alt="" id="anew">
   </div>
 
 </body>
